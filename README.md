@@ -1,2 +1,17 @@
 # php-7-1-fpm-alpine
+
 Base image from php:7.1-fpm-alpine
+
+## Create docker hub token for password and username
+
+sudo nano ./docker/token/password.txt
+sudo nano ./docker/token/username.txt
+
+## Login into docker hub
+
+./docker/login.sh
+
+## Build to execute and upload
+
+./docker/build/execute.sh
+./docker/build/uplaod.sh
