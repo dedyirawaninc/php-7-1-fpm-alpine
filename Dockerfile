@@ -21,6 +21,8 @@ RUN apk add --update --no-cache pcre-dev
 
 RUN update-ca-certificates
 
+COPY ./php.ini /usr/local/etc/php/php.ini
+
 RUN docker-php-ext-install exif
 RUN docker-php-ext-install gd
 RUN docker-php-ext-install intl
