@@ -1,4 +1,4 @@
-FROM php:8.1-fpm-alpine
+FROM php:7.1-fpm-alpine
 
 LABEL maintainer="Dedy Irawan <dedy.irawan.inc@gmail.com>"
 
